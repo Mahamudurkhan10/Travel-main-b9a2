@@ -155,6 +155,10 @@ main {
     width: 50%;
 }
 
+.popular-tour-img img {
+    width: 100%;
+}
+
 .destination-title {
     color: #131318;
     text-align: center;
@@ -171,15 +175,8 @@ main {
     font-family: Mulish;
     font-size: 16px;
     font-weight: 400;
-
 }
 
-.maldives {
-    background-image: url("../Images/Rectangle\ 5.png");
-    grid-area: maldives;
-    background-repeat: no-repeat;
-    height: 300px;
-}
 
 h4 {
     padding: 10px;
@@ -191,51 +188,65 @@ h4 {
     padding-top: 130px;
 
 }
+.maldives {
+    background-image: url("../Images/Rectangle\ 5.png");
+     grid-area: maldives; 
+    background-repeat: no-repeat;
+    height: 300px;
+   
+    
+}
 
 .indonesia {
     background-image: url("../Images/Rectangle\ 8.png");
-    grid-area: indonesia;
+     grid-area: indonesia; 
     background-repeat: no-repeat;
+    height: 300px;
+  
 
 }
 
 .sri-lanka {
     background-image: url("../Images/Rectangle\ 6.png");
-    grid-area: sri-lanka;
+     grid-area: sri-lanka; 
     background-repeat: no-repeat;
-    height: 286px;
-    margin-right: 30px;
+     height: 286px;
+     margin-right: 30px; 
+   
 
 
 }
 
 .north-america {
     background-image: url("../Images/Rectangle\ 7.png");
-    grid-area: north-america;
+     grid-area: north-america; 
     background-repeat: no-repeat;
-    margin-left: 30px;
-    margin-right: -25px;
+     margin-left: 30px;
+    margin-right: -25px; 
     height: 286px;
+   
 
 
 }
 
 .kashmir {
     background-image: url("../Images/Rectangle\ 9.png");
-    grid-area: kashmir;
+     grid-area: kashmir; 
     background-repeat: no-repeat;
     margin-left: 3px;
     height: 286px;
+   
 
 }
 
 .bangladesh {
 
     background-image: url("../Images/Rectangle\ 11.png");
-    grid-area: bangladesh;
+     grid-area: bangladesh; 
     background-repeat: no-repeat;
     height: 300px;
     margin-right: 3px;
+ 
 
 }
 
@@ -243,9 +254,10 @@ h4 {
 
     background-image: url("../Images/Rectangle\ 10.png");
     background-repeat: no-repeat;
-    grid-area: bandarban;
+     grid-area: bandarban; 
     margin-left: 40px;
     height: 300px;
+   
 
 }
 
@@ -254,18 +266,15 @@ h4 {
 
     gap: 10px;
     display: grid;
-    grid-template-areas:
+    
+     grid-template-areas:
         "maldives maldives maldives maldives indonesia indonesia indonesia indonesia "
         "sri-lanka sri-lanka north-america north-america north-america north-america kashmir kashmir"
-        "bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban"
+        "bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban";
 
 
-
-    ;
-
-
-}
-
+}  
+/*  Why Choose Us section */
 .choose-us-title {
     text-align: center;
     margin-top: 50px;
@@ -278,7 +287,7 @@ h4 {
 }
 
 .choose-us-description {
-    
+
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: Mulish;
@@ -289,7 +298,7 @@ h4 {
 
 .choose-title {
     color: #131318;
-    
+
     font-family: Mulish;
     font-size: 24px;
     font-weight: 800;
@@ -306,12 +315,14 @@ h4 {
 .choose-us-main {
     margin-top: 50px;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
 
 
+
 }
-.choose-us i{
+
+.choose-us i {
     margin-bottom: 20px;
 }
 
@@ -325,6 +336,8 @@ h4 {
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     height: 200px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .main-service {
@@ -336,9 +349,13 @@ h4 {
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
     height: 200px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .main-price {
+    overflow: auto;
+    overflow-x: hidden;
     padding-left: 20px;
     padding-top: 50px;
     padding-bottom: 0px;
@@ -350,24 +367,155 @@ h4 {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+/* Subscribe section */
+.subscribe {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+
+.newsletter-subscribe {
+    border-radius: 16px;
+    background: rgba(35, 255, 237, 0.05);
+    border: 1px solid #FF5400;
+    padding: 70px;
+    margin-bottom: 2px;
 
 
 
 
+}
+
+.subscribe-form {
+    padding-top: 30px;
+}
+
+.line {
+    width: 50%;
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.subscribe-form input {
+    color: rgba(19, 19, 24, 0.30);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.btn-subscribe {
+    padding-left: 11%;
+    padding-right: 11%;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
 
 
+}
 
 
+.newsletter-img {
+    width: 50%;
+
+}
+
+.newsletter-img img {
+    width: 100%;
+    position: relative;
+}
 
 
+.btn-save-up {
+    position: absolute;
+    border-radius: 16px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 280px;
+    margin-left: -165px;
+    ;
+    padding: 5px;
+    transform: rotate(-19.628deg);
+}
+
+.save-up-title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 19px;
+    font-weight: 800;
+
+}
+/* footer */
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 50px;
+    padding-top: 50px;
+    height: 400px;
+}
+
+.footer-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.footer-icon {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.line-two {
+    background: rgba(19, 19, 24, 0.10);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-end {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 50px;
 
 
+}
+
+/* small device */
 @media screen and (max-width:600px) {
 
     nav,
     nav>ul,
     .select-option,
-    .our-popular-tour {
+    .our-popular-tour,
+    .choose-us-main,
+    .subscribe {
         flex-direction: column;
     }
 
@@ -407,40 +555,143 @@ h4 {
     }
 
     .destination-img {
+        width: 95%;
+        margin: 0 auto;
+        background-position: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+            "maldives maldives"
+            "indonesia indonesia "
+            "sri-lanka kashmir"
+            "bangladesh bangladesh"
+            "bandarban bandarban"
+            
+            "north-america north-america"
+        ;
+    } 
+
+
+    .destination-content,
+    .choose-us {
         width: 80%;
         margin: 0 auto;
-
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "maldives"
-            "indonesia "
-            "sri-lanka"
-
-            "bangladesh"
-            "bandarban"
-            "kashmir"
-            "north-america"
-        ;
     }
+
+    
 
     .sri-lanka {
         margin-right: 0px;
     }
 
     .north-america {
-
+        max-width: 100%;
         margin-left: 0;
     }
 
     .bandarban {
-        width: 100%;
+
         margin-left: 0;
+    } 
+
+    .main-price,
+    .main-hotel,
+    .main-service {
+        width: 78%;
+        margin: 0 auto;
+
+        overflow: auto;
+        overflow-x: hidden;
+
     }
 
-    .kashmir {
-        width: 274px;
-        margin-left: 30px;
+    .main-price {
+        margin-top: 20px;
     }
 
+    .subscribe {
+        max-width: 82%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .newsletter-img {
+        width: 100%;
+        position: relative;
+    }
+
+    .newsletter-img img {
+        width: 100%;
+
+    }
+
+    .btn-save-up {
+        position: absolute;
+        font-size: 10px;
+        margin-left: -42%;
+        margin-top: 42%;
+        margin-bottom: 15px;
+    }
+
+    .save-up-title {
+        font-size: 15px;
+    }
+    .footer-title {
+        margin-top: -10px;
+    }
+
+    .line-two {
+        margin-top: -12px;
+        margin-bottom: 3px;
+    }
+
+    .footer-end {
+        margin-top: -1px;
+    }
+
+}
+/* medium device  */
+@media screen and (min-width:600px) and (max-width:992px) {
+    .destination-img {
+       
+        width: 95%;
+        margin: 0 auto;
+        background-position: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+            "maldives maldives  "
+            "indonesia indonesia  "
+            "sri-lanka kashmir "
+            "bangladesh north-america  "
+            "bandarban bandarban"
+            
+           
+        ;
+    }
+    .maldives, .indonesia ,.bandarban {
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        margin-top: 10px;
+    }
+    .sri-lanka {
+        margin-right: 0px;
+    }
+    .kashmir{
+        padding-right: 12%;
+    }
+    .newsletter-img {
+        width: 100%;
+        position: relative;
+    }
+    .newsletter-img img {
+        width: 100%;
+
+    }
+    .btn-save-up {
+        position: absolute;
+        font-size: 10px;
+        margin-left: -160px;
+        margin-top:210px ;
+        margin-bottom: 15px;
+    }
 
 }
